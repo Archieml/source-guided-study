@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source Guided Study"
+  short_description: "根据资料生成详细讲解问答和学习笔记，并在追问时补充完善"
+  default_prompt: "Use $source-guided-study to create source-grounded Markdown study notes, then answer follow-up questions and update the note when useful."
