@@ -28,6 +28,9 @@ learning material, not ordinary open-ended Q&A with no source.
 ```text
 source-guided-study/
 ├── README.md
+├── package.json
+├── scripts/
+│   └── install.js
 └── source-guided-study/
     ├── SKILL.md
     ├── agents/
@@ -40,6 +43,53 @@ source-guided-study/
 ```
 
 The actual Codex Skill folder is `source-guided-study/`.
+
+## Install With npx
+
+Install directly from GitHub:
+
+```powershell
+npx github:Archieml/source-guided-study
+```
+
+If the Skill is already installed and you want to replace it:
+
+```powershell
+npx github:Archieml/source-guided-study -- --force
+```
+
+By default, the installer copies the inner Skill folder to:
+
+```text
+$CODEX_HOME/skills/source-guided-study
+```
+
+If `CODEX_HOME` is not set, it uses:
+
+```text
+~/.codex/skills/source-guided-study
+```
+
+On Windows, that is usually:
+
+```text
+C:\Users\<you>\.codex\skills\source-guided-study
+```
+
+You can also choose a custom install location:
+
+```powershell
+npx github:Archieml/source-guided-study -- --target "C:\path\to\source-guided-study"
+```
+
+After installation, start a new Codex session so the Skill can be discovered.
+
+If this package is later published to the npm registry, the shorter command will
+also work:
+
+```powershell
+npx source-guided-study
+```
 
 ## Install Manually
 

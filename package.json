@@ -1,0 +1,33 @@
+{
+  "name": "source-guided-study",
+  "version": "0.1.0",
+  "description": "Install the source-guided-study Codex Skill for source-grounded study notes, beginner-friendly explanations, adaptive Q&A, and follow-up note updates.",
+  "bin": {
+    "source-guided-study": "./scripts/install.js"
+  },
+  "files": [
+    "source-guided-study",
+    "scripts/install.js",
+    "README.md"
+  ],
+  "keywords": [
+    "codex",
+    "codex-skill",
+    "learning",
+    "study-notes",
+    "markdown",
+    "pdf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archieml/source-guided-study.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Archieml/source-guided-study/issues"
+  },
+  "homepage": "https://github.com/Archieml/source-guided-study#readme",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=16"
+  }
+}
